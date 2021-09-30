@@ -1,0 +1,28 @@
+Sep 08, 2021 5:09:05 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      (this might take a while...)
+Sep 08, 2021 5:09:07 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, cleanAll, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 08, 2021 5:09:07 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      failed. Time:          0h:00m:01s:918ms
+Sep 08, 2021 5:09:07 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench engine validation: Data generation             (this might take a while...)
+Sep 08, 2021 5:09:09 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, dataGen, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 08, 2021 5:09:09 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench engine validation: Data generation             finished. Time:          0h:00m:01s:434ms
+Sep 08, 2021 5:09:09 PM io.bigdatabenchmark.v1.driver.BigBench run
+INFO: ==============
+Benchmark run terminated
+Reason: An error occured while running a command in phase ENGINE_VALIDATION_DATA_GENERATION
+==============
+Sep 08, 2021 5:09:09 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: 
+************
+TPCx-BB
+Result
+v1.2
+************
+Sep 08, 2021 5:09:09 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: NOK: Some required BigBench phases were skipped. No final result available.

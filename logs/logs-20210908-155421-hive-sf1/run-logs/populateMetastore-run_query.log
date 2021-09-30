@@ -1,0 +1,66 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = c3db6dc6-4bb6-4d4f-997e-882635dadaf1
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+FAILED: HiveException java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient
+An error occured while running command:
+==========
+runEngineCmd -f /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/population/hiveCreateLoad.sql
+==========
+Please check the log files for details
+======= Load data into hive time =========
+Start timestamp: 2021/09/08:15:54:11 1631096651
+Stop  timestamp: 2021/09/08:15:54:20 1631096660
+Duration:  0h 0m 9s
+----- result -----
+Load data FAILED exit code: 64
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/populateMetastore-run_query.log
+===========================

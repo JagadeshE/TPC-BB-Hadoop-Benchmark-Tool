@@ -1,0 +1,121 @@
+Additional local hive settings found. Adding /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q10/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = b0fcdfd0-f1a3-4fb7-8032-ec2bab212164
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = 0cc6a280-e29e-42d1-b6ee-2237ec28d729
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+Added [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/opennlp-maxent-3.0.3.jar] to class path
+Added resources: [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/opennlp-maxent-3.0.3.jar]
+Added [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/opennlp-tools-1.6.0.jar] to class path
+Added resources: [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/opennlp-tools-1.6.0.jar]
+Added [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/bigbenchqueriesmr.jar] to class path
+Added resources: [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/bigbenchqueriesmr.jar]
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF()
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF() done
+OK
+Time taken: 0.132 seconds
+hive.exec.compress.output=false
+hive.optimize.sampling.orderby=true
+hive.optimize.sampling.orderby.number=20000
+hive.optimize.sampling.orderby.percent=0.1
+OK
+Time taken: 0.071 seconds
+OK
+Time taken: 0.432 seconds
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF()
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF() done
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF()
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF() done
+initialize() io.bigdatabenchmark.v1.queries.q10.SentimentUDF
+initialize() io.bigdatabenchmark.v1.queries.q10.SentimentUDF done
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF()
+initialize io.bigdatabenchmark.v1.queries.q10.SentimentUDF() done
+initialize() io.bigdatabenchmark.v1.queries.q10.SentimentUDF
+initialize() io.bigdatabenchmark.v1.queries.q10.SentimentUDF done
+Query ID = odoo_20210909165641_58c5fff1-daf2-48ec-a157-bb1665abf8b7
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1631181757971_0161, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0161/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0161
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2021-09-09 16:56:51,499 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:57:51,912 Stage-1 map = 0%,  reduce = 0%, Cumulative CPU 57.98 sec
+2021-09-09 16:58:37,778 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 108.2 sec
+2021-09-09 16:58:44,928 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 112.91 sec
+MapReduce Total cumulative CPU time: 1 minutes 52 seconds 910 msec
+Ended Job = job_1631181757971_0161
+Loading data to table bigbench.q10_hive_power_test_0_result
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 112.91 sec   HDFS Read: 24730009 HDFS Write: 50347630 SUCCESS
+Total MapReduce CPU Time Spent: 1 minutes 52 seconds 910 msec
+OK
+Time taken: 130.048 seconds
+======= q10_hive_power_test_0 time =======
+Start timestamp: 2021/09/09:16:56:33 1631186793
+Stop  timestamp: 2021/09/09:16:58:52 1631186932
+Duration:  0h 2m 19s
+q10_hive_power_test_0 SUCCESS exit code: 0 
+----- result -----
+HAS_RESULT  bytes: 50344544
+to display: hadoop fs -cat /user/odoo/benchmarks/bigbench/queryResults/q10_hive_power_test_0_result/*
+----- logs -----
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_power_test_0.log
+=========================
+Validation of /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q10/results/q10-result passed: Query returned correct results
+Validation passed: Query results are OK

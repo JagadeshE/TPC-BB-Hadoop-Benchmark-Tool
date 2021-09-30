@@ -1,0 +1,1473 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = 567fdcbc-d1c3-4710-ac2d-d8500e45a247
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = dc4fcf0a-f370-40eb-beeb-4311cded6496
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+OK
+Time taken: 0.074 seconds
+OK
+Time taken: 0.485 seconds
+OK
+Time taken: 0.267 seconds
+OK
+Time taken: 0.018 seconds
+OK
+Time taken: 0.077 seconds
+OK
+Time taken: 0.112 seconds
+Query ID = odoo_20210909153514_df319848-cb50-47f0-a185-a47bd277153b
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0003, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0003/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0003
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:35:22,663 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:35:27,840 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 4.11 sec
+MapReduce Total cumulative CPU time: 4 seconds 110 msec
+Ended Job = job_1631181757971_0003
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-35-14_174_7684889684646419883-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/customer
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 4.11 sec   HDFS Read: 13292394 HDFS Write: 4194441 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 110 msec
+OK
+Time taken: 21.375 seconds
+OK
+Time taken: 0.145 seconds
+OK
+Time taken: 0.02 seconds
+OK
+Time taken: 0.062 seconds
+OK
+Time taken: 0.137 seconds
+Query ID = odoo_20210909153535_482a73d8-baae-412a-be50-7320913bd938
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0004, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0004/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0004
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:35:41,897 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:35:47,020 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.24 sec
+MapReduce Total cumulative CPU time: 3 seconds 240 msec
+Ended Job = job_1631181757971_0004
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-35-35_980_417628007955724186-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/customer_address
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.24 sec   HDFS Read: 5394302 HDFS Write: 934457 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 240 msec
+OK
+Time taken: 20.176 seconds
+OK
+Time taken: 0.14 seconds
+OK
+Time taken: 0.024 seconds
+OK
+Time taken: 0.078 seconds
+OK
+Time taken: 0.08 seconds
+Query ID = odoo_20210909153556_f9772a85-e6e5-4fa4-818c-84d950265dfc
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0005, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0005/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0005
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:36:02,666 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:36:10,840 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 7.33 sec
+MapReduce Total cumulative CPU time: 7 seconds 330 msec
+Ended Job = job_1631181757971_0005
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-35-56_494_1730021130607409130-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/customer_demographics
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 7.33 sec   HDFS Read: 77759528 HDFS Write: 7167768 SUCCESS
+Total MapReduce CPU Time Spent: 7 seconds 330 msec
+OK
+Time taken: 22.229 seconds
+OK
+Time taken: 0.143 seconds
+OK
+Time taken: 0.017 seconds
+OK
+Time taken: 0.054 seconds
+OK
+Time taken: 0.082 seconds
+Query ID = odoo_20210909153619_5873af4c-9419-41d4-854d-bef7be478eff
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0006, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0006/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0006
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:36:24,325 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:36:29,459 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 4.09 sec
+MapReduce Total cumulative CPU time: 4 seconds 90 msec
+Ended Job = job_1631181757971_0006
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-36-19_037_1504044803933817355-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/date_dim
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 4.09 sec   HDFS Read: 15404764 HDFS Write: 1746974 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 90 msec
+OK
+Time taken: 20.186 seconds
+OK
+Time taken: 0.094 seconds
+OK
+Time taken: 0.018 seconds
+OK
+Time taken: 0.043 seconds
+OK
+Time taken: 0.08 seconds
+Query ID = odoo_20210909153639_0a3dfa1f-27be-4d2e-8348-18b27ae02c19
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0007, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0007/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0007
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:36:45,775 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:36:49,893 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.87 sec
+MapReduce Total cumulative CPU time: 1 seconds 870 msec
+Ended Job = job_1631181757971_0007
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-36-39_471_493866582745432833-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/household_demographics
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.87 sec   HDFS Read: 160807 HDFS Write: 14827 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 870 msec
+OK
+Time taken: 18.2 seconds
+OK
+Time taken: 0.072 seconds
+OK
+Time taken: 0.017 seconds
+OK
+Time taken: 0.043 seconds
+OK
+Time taken: 0.092 seconds
+Query ID = odoo_20210909153657_bd4ed79e-e9b9-49f0-bab6-0953a8eaf04b
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0008, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0008/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0008
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:37:04,710 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:37:08,809 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.83 sec
+MapReduce Total cumulative CPU time: 1 seconds 830 msec
+Ended Job = job_1631181757971_0008
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-36-57_924_8145532600700748281-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/income_band
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.83 sec   HDFS Read: 5602 HDFS Write: 497 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 830 msec
+OK
+Time taken: 18.209 seconds
+OK
+Time taken: 0.086 seconds
+OK
+Time taken: 0.023 seconds
+OK
+Time taken: 0.082 seconds
+OK
+Time taken: 0.074 seconds
+Query ID = odoo_20210909153716_20451600-2966-466e-8096-82d9f12271be
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0009, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0009/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0009
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:37:20,930 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:37:27,069 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.38 sec
+MapReduce Total cumulative CPU time: 3 seconds 380 msec
+Ended Job = job_1631181757971_0009
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-37-16_411_7429778896812713938-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/item
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.38 sec   HDFS Read: 6807579 HDFS Write: 2468347 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 380 msec
+OK
+Time taken: 18.155 seconds
+OK
+Time taken: 0.094 seconds
+OK
+Time taken: 0.018 seconds
+OK
+Time taken: 0.077 seconds
+OK
+Time taken: 0.103 seconds
+Query ID = odoo_20210909153734_8c4fdf0f-7527-4a9f-bed1-2d087389c93c
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0010, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0010/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0010
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:37:40,354 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:37:45,479 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.35 sec
+MapReduce Total cumulative CPU time: 2 seconds 350 msec
+Ended Job = job_1631181757971_0010
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-37-34_869_7972357753464136700-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/promotion
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.35 sec   HDFS Read: 54506 HDFS Write: 14055 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 350 msec
+OK
+Time taken: 18.224 seconds
+OK
+Time taken: 0.11 seconds
+OK
+Time taken: 0.019 seconds
+OK
+Time taken: 0.078 seconds
+OK
+Time taken: 0.073 seconds
+Query ID = odoo_20210909153753_eca03263-bb64-45ab-acd4-0077e9e37146
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0011, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0011/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0011
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:38:00,827 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:38:04,917 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.83 sec
+MapReduce Total cumulative CPU time: 1 seconds 830 msec
+Ended Job = job_1631181757971_0011
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-37-53_415_5569400984827401971-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/reason
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.83 sec   HDFS Read: 8294 HDFS Write: 2369 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 830 msec
+OK
+Time taken: 20.167 seconds
+OK
+Time taken: 0.102 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.068 seconds
+Query ID = odoo_20210909153813_06fd7b7b-cc7a-4112-9fcb-48ff2d4dbdc5
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0012, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0012/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0012
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:38:19,617 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:38:24,736 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.86 sec
+MapReduce Total cumulative CPU time: 1 seconds 860 msec
+Ended Job = job_1631181757971_0012
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-38-13_848_7237968805225256501-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/ship_mode
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.86 sec   HDFS Read: 6887 HDFS Write: 2111 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 860 msec
+OK
+Time taken: 18.21 seconds
+OK
+Time taken: 0.108 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.05 seconds
+OK
+Time taken: 0.071 seconds
+Query ID = odoo_20210909153832_db7a1a45-776b-44d5-bad7-1856e1bd3332
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0013, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0013/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0013
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:38:37,871 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:38:42,990 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.94 sec
+MapReduce Total cumulative CPU time: 1 seconds 940 msec
+Ended Job = job_1631181757971_0013
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-38-32_355_2040749405140826779-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/store
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.94 sec   HDFS Read: 12964 HDFS Write: 5167 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 940 msec
+OK
+Time taken: 18.178 seconds
+OK
+Time taken: 0.12 seconds
+OK
+Time taken: 0.017 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.062 seconds
+Query ID = odoo_20210909153850_d1ed168e-7ac5-4ef6-b14e-7e38ddcb3bd5
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0014, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0014/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0014
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:38:58,476 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:39:03,596 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.05 sec
+MapReduce Total cumulative CPU time: 3 seconds 50 msec
+Ended Job = job_1631181757971_0014
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-38-50_832_3308541681139871061-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/time_dim
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.05 sec   HDFS Read: 5113883 HDFS Write: 223194 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 50 msec
+OK
+Time taken: 20.17 seconds
+OK
+Time taken: 0.082 seconds
+OK
+Time taken: 0.015 seconds
+OK
+Time taken: 0.069 seconds
+OK
+Time taken: 0.066 seconds
+Query ID = odoo_20210909153911_3737f5a6-2cc4-44c8-9ebd-05e07e911dea
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0015, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0015/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0015
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:39:18,119 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:39:22,216 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.98 sec
+MapReduce Total cumulative CPU time: 1 seconds 980 msec
+Ended Job = job_1631181757971_0015
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-39-11_240_1578606098317369944-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/warehouse
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.98 sec   HDFS Read: 7727 HDFS Write: 2133 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 980 msec
+OK
+Time taken: 18.155 seconds
+OK
+Time taken: 0.084 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.055 seconds
+OK
+Time taken: 0.072 seconds
+Query ID = odoo_20210909153929_a21c98bf-fa34-4498-ab55-7804bd3238ad
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0016, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0016/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0016
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:39:35,942 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:39:40,039 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.92 sec
+MapReduce Total cumulative CPU time: 1 seconds 920 msec
+Ended Job = job_1631181757971_0016
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-39-29_653_3030693195766987445-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_site
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.92 sec   HDFS Read: 18100 HDFS Write: 7304 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 920 msec
+OK
+Time taken: 18.151 seconds
+OK
+Time taken: 0.094 seconds
+OK
+Time taken: 0.017 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.064 seconds
+Query ID = odoo_20210909153948_a832989d-78b4-4a44-be65-b11d85c020e9
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0017, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0017/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0017
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:39:54,339 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:39:58,480 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.0 sec
+MapReduce Total cumulative CPU time: 2 seconds 0 msec
+Ended Job = job_1631181757971_0017
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-39-48_028_2368766072633922049-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_page
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.0 sec   HDFS Read: 15090 HDFS Write: 5479 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 0 msec
+OK
+Time taken: 18.186 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.015 seconds
+OK
+Time taken: 0.037 seconds
+OK
+Time taken: 0.075 seconds
+Query ID = odoo_20210909154006_2ab49c22-0fb0-4674-9ffb-1b5f71783c7b
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0018, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0018/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0018
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 0
+2021-09-09 15:40:13,650 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:40:24,941 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 9.4 sec
+2021-09-09 15:40:28,003 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 22.58 sec
+MapReduce Total cumulative CPU time: 22 seconds 580 msec
+Ended Job = job_1631181757971_0018
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-40-06_489_8832486099847082763-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/inventory
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2   Cumulative CPU: 22.58 sec   HDFS Read: 424967010 HDFS Write: 35747959 SUCCESS
+Total MapReduce CPU Time Spent: 22 seconds 580 msec
+OK
+Time taken: 30.185 seconds
+OK
+Time taken: 0.081 seconds
+OK
+Time taken: 0.015 seconds
+OK
+Time taken: 0.043 seconds
+OK
+Time taken: 0.073 seconds
+Query ID = odoo_20210909154036_d6ce1426-d618-4ecd-aea9-9e738555219f
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0019, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0019/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0019
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:40:43,701 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:40:52,895 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 7.06 sec
+MapReduce Total cumulative CPU time: 7 seconds 60 msec
+Ended Job = job_1631181757971_0019
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-40-36_894_7813811032775999257-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/store_sales
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 7.06 sec   HDFS Read: 92773766 HDFS Write: 23366478 SUCCESS
+Total MapReduce CPU Time Spent: 7 seconds 60 msec
+OK
+Time taken: 24.133 seconds
+OK
+Time taken: 0.105 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.068 seconds
+OK
+Time taken: 0.065 seconds
+Query ID = odoo_20210909154101_f2ed12c5-6331-4c28-b3c0-faaccb6866d7
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0020, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0020/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0020
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:41:07,825 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:41:11,923 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.89 sec
+MapReduce Total cumulative CPU time: 2 seconds 890 msec
+Ended Job = job_1631181757971_0020
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-41-01_325_5872496887132136307-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/store_returns
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.89 sec   HDFS Read: 4345921 HDFS Write: 1204071 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 890 msec
+OK
+Time taken: 20.144 seconds
+OK
+Time taken: 0.097 seconds
+OK
+Time taken: 0.013 seconds
+OK
+Time taken: 0.049 seconds
+OK
+Time taken: 0.07 seconds
+Query ID = odoo_20210909154121_d4f53bdf-65b2-4d6e-95de-67f2f276fba6
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0021, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0021/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0021
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:41:27,631 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:41:37,835 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 8.43 sec
+MapReduce Total cumulative CPU time: 8 seconds 430 msec
+Ended Job = job_1631181757971_0021
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-41-21_744_4031178585843254416-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_sales
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 8.43 sec   HDFS Read: 133801809 HDFS Write: 33122262 SUCCESS
+Total MapReduce CPU Time Spent: 8 seconds 430 msec
+OK
+Time taken: 26.202 seconds
+OK
+Time taken: 0.113 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.037 seconds
+OK
+Time taken: 0.069 seconds
+Query ID = odoo_20210909154148_f78c5215-82b2-455f-95e5-738231ac7187
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0022, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0022/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0022
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:41:55,822 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:42:00,934 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.0 sec
+MapReduce Total cumulative CPU time: 3 seconds 0 msec
+Ended Job = job_1631181757971_0022
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-41-48_241_6511839878776705019-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_returns
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.0 sec   HDFS Read: 5393058 HDFS Write: 1423359 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 0 msec
+OK
+Time taken: 22.214 seconds
+OK
+Time taken: 0.064 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.041 seconds
+OK
+Time taken: 0.122 seconds
+Query ID = odoo_20210909154210_f66a4560-d2ae-4835-bba3-3e07e077b81e
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0023, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0023/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0023
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:42:17,985 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:42:23,104 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.11 sec
+MapReduce Total cumulative CPU time: 3 seconds 110 msec
+Ended Job = job_1631181757971_0023
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-42-10_756_6266347481030716547-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/item_marketprices
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.11 sec   HDFS Read: 4207162 HDFS Write: 641615 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 110 msec
+OK
+Time taken: 20.142 seconds
+OK
+Time taken: 0.078 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.04 seconds
+OK
+Time taken: 0.071 seconds
+Query ID = odoo_20210909154231_16f04064-7076-4c45-a269-72dae2ad67d3
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0024, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0024/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0024
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:42:36,823 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:42:48,037 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 9.99 sec
+MapReduce Total cumulative CPU time: 9 seconds 990 msec
+Ended Job = job_1631181757971_0024
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-42-31_129_8907982497573233989-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_clickstreams
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 9.99 sec   HDFS Read: 178732164 HDFS Write: 35643814 SUCCESS
+Total MapReduce CPU Time Spent: 9 seconds 990 msec
+OK
+Time taken: 24.152 seconds
+OK
+Time taken: 0.064 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.062 seconds
+OK
+Time taken: 0.061 seconds
+Query ID = odoo_20210909154255_fc56bfbc-a7c7-416e-8268-786356d91425
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0025, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0025/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0025
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 15:43:02,288 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:43:08,516 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 5.14 sec
+MapReduce Total cumulative CPU time: 5 seconds 140 msec
+Ended Job = job_1631181757971_0025
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_15-42-55_526_7904493430215089969-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/product_reviews
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 5.14 sec   HDFS Read: 56361493 HDFS Write: 25517533 SUCCESS
+Total MapReduce CPU Time Spent: 5 seconds 140 msec
+OK
+Time taken: 20.132 seconds
+OK
+Time taken: 0.064 seconds
+======= Load data into hive time =========
+Start timestamp: 2021/09/09:15:35:04 1631181904
+Stop  timestamp: 2021/09/09:15:43:21 1631182401
+Duration:  0h 8m 17s
+----- result -----
+Load data SUCCESS exit code: 0
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/populateMetastore-run_query.log
+===========================
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = 6cacc8f1-b75d-47a3-9c50-fb070e3f6925
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = d9059ced-1787-4a3a-b243-ed45402e4147
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+OK
+Time taken: 0.072 seconds
+OK
+Time taken: 0.438 seconds
+OK
+Time taken: 0.253 seconds
+OK
+Time taken: 0.018 seconds
+OK
+Time taken: 0.079 seconds
+OK
+Time taken: 0.109 seconds
+Query ID = odoo_20210909163424_1991298f-4f4f-467b-a5a9-975a6ada9c7d
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0115, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0115/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0115
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:34:31,645 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:34:37,833 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 4.02 sec
+MapReduce Total cumulative CPU time: 4 seconds 20 msec
+Ended Job = job_1631181757971_0115
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-34-24_838_5797878499906918308-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/customer
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 4.02 sec   HDFS Read: 13292394 HDFS Write: 4194441 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 20 msec
+OK
+Time taken: 21.325 seconds
+OK
+Time taken: 0.108 seconds
+OK
+Time taken: 0.019 seconds
+OK
+Time taken: 0.054 seconds
+OK
+Time taken: 0.094 seconds
+Query ID = odoo_20210909163446_f44c8483-aa07-4a95-9995-c0b72d788d31
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0116, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0116/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0116
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:34:52,066 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:34:57,191 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.4 sec
+MapReduce Total cumulative CPU time: 3 seconds 400 msec
+Ended Job = job_1631181757971_0116
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-34-46_451_6423188700183887716-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/customer_address
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.4 sec   HDFS Read: 5394306 HDFS Write: 934457 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 400 msec
+OK
+Time taken: 18.223 seconds
+OK
+Time taken: 0.092 seconds
+OK
+Time taken: 0.02 seconds
+OK
+Time taken: 0.084 seconds
+OK
+Time taken: 0.081 seconds
+Query ID = odoo_20210909163504_e6d99dcd-d290-4074-b1b2-8e70cb8ba51d
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0117, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0117/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0117
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:35:10,864 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:35:20,083 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 7.65 sec
+MapReduce Total cumulative CPU time: 7 seconds 650 msec
+Ended Job = job_1631181757971_0117
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-35-04_963_7531581231345252060-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/customer_demographics
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 7.65 sec   HDFS Read: 77759528 HDFS Write: 7167768 SUCCESS
+Total MapReduce CPU Time Spent: 7 seconds 650 msec
+OK
+Time taken: 24.174 seconds
+OK
+Time taken: 0.096 seconds
+OK
+Time taken: 0.019 seconds
+OK
+Time taken: 0.055 seconds
+OK
+Time taken: 0.122 seconds
+Query ID = odoo_20210909163529_f53c0977-6c0e-4cf6-ac22-cc3aa66870eb
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0118, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0118/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0118
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:35:35,252 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:35:41,391 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 4.16 sec
+MapReduce Total cumulative CPU time: 4 seconds 160 msec
+Ended Job = job_1631181757971_0118
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-35-29_489_997641147427146549-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/date_dim
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 4.16 sec   HDFS Read: 15404760 HDFS Write: 1746974 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 160 msec
+OK
+Time taken: 20.192 seconds
+OK
+Time taken: 0.078 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.039 seconds
+OK
+Time taken: 0.089 seconds
+Query ID = odoo_20210909163549_a307e1d2-dcc1-4b4c-805f-bc2676623cd1
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0119, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0119/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0119
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:35:56,171 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:36:00,288 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.24 sec
+MapReduce Total cumulative CPU time: 2 seconds 240 msec
+Ended Job = job_1631181757971_0119
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-35-49_915_1389920921693675366-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/household_demographics
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.24 sec   HDFS Read: 160811 HDFS Write: 14827 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 240 msec
+OK
+Time taken: 20.192 seconds
+OK
+Time taken: 0.072 seconds
+OK
+Time taken: 0.017 seconds
+OK
+Time taken: 0.043 seconds
+OK
+Time taken: 0.079 seconds
+Query ID = odoo_20210909163610_898f0423-25e8-416e-a34e-6bbfc97db9de
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0120, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0120/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0120
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:36:16,817 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:36:20,922 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.89 sec
+MapReduce Total cumulative CPU time: 1 seconds 890 msec
+Ended Job = job_1631181757971_0120
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-36-10_347_4582293878942762248-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/income_band
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.89 sec   HDFS Read: 5602 HDFS Write: 497 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 890 msec
+OK
+Time taken: 18.149 seconds
+OK
+Time taken: 0.08 seconds
+OK
+Time taken: 0.021 seconds
+OK
+Time taken: 0.06 seconds
+OK
+Time taken: 0.083 seconds
+Query ID = odoo_20210909163628_81f51d10-5c33-442e-b800-29e0df886c2d
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0121, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0121/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0121
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:36:34,607 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:36:39,739 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.49 sec
+MapReduce Total cumulative CPU time: 3 seconds 490 msec
+Ended Job = job_1631181757971_0121
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-36-28_753_8401451935783084009-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/item
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.49 sec   HDFS Read: 6807579 HDFS Write: 2468347 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 490 msec
+OK
+Time taken: 18.156 seconds
+OK
+Time taken: 0.083 seconds
+OK
+Time taken: 0.015 seconds
+OK
+Time taken: 0.072 seconds
+OK
+Time taken: 0.102 seconds
+Query ID = odoo_20210909163647_5007c7c7-d203-44d8-a53f-9203871371ca
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0122, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0122/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0122
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:36:52,792 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:36:56,907 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.5 sec
+MapReduce Total cumulative CPU time: 2 seconds 500 msec
+Ended Job = job_1631181757971_0122
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-36-47_187_5414553870842079118-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/promotion
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.5 sec   HDFS Read: 54506 HDFS Write: 14055 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 500 msec
+OK
+Time taken: 18.18 seconds
+OK
+Time taken: 0.088 seconds
+OK
+Time taken: 0.02 seconds
+OK
+Time taken: 0.049 seconds
+OK
+Time taken: 0.094 seconds
+Query ID = odoo_20210909163705_99c4a96a-8a63-4cd3-86fd-666deca51922
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0123, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0123/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0123
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:37:10,589 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:37:15,703 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.12 sec
+MapReduce Total cumulative CPU time: 2 seconds 120 msec
+Ended Job = job_1631181757971_0123
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-37-05_663_3499485957872588556-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/reason
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.12 sec   HDFS Read: 8294 HDFS Write: 2369 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 120 msec
+OK
+Time taken: 18.19 seconds
+OK
+Time taken: 0.075 seconds
+OK
+Time taken: 0.017 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.065 seconds
+Query ID = odoo_20210909163724_9215326e-c772-4340-a5cb-12cdac6a34d4
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0124, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0124/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0124
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:37:30,087 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:37:34,174 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.94 sec
+MapReduce Total cumulative CPU time: 1 seconds 940 msec
+Ended Job = job_1631181757971_0124
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-37-24_055_4329201981889450710-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/ship_mode
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.94 sec   HDFS Read: 6887 HDFS Write: 2111 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 940 msec
+OK
+Time taken: 20.178 seconds
+OK
+Time taken: 0.071 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.048 seconds
+OK
+Time taken: 0.085 seconds
+Query ID = odoo_20210909163744_6082438c-2468-4baa-8b46-362ecf7de79e
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0125, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0125/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0125
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:37:50,750 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:37:55,881 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.34 sec
+MapReduce Total cumulative CPU time: 2 seconds 340 msec
+Ended Job = job_1631181757971_0125
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-37-44_466_8434603620320019021-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/store
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.34 sec   HDFS Read: 12964 HDFS Write: 5167 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 340 msec
+OK
+Time taken: 20.158 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.02 seconds
+OK
+Time taken: 0.044 seconds
+OK
+Time taken: 0.065 seconds
+Query ID = odoo_20210909163804_fa0cf11f-5e13-4e44-ac52-6a64d5c79a3c
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0126, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0126/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0126
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:38:11,551 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:38:15,673 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.18 sec
+MapReduce Total cumulative CPU time: 3 seconds 180 msec
+Ended Job = job_1631181757971_0126
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-38-04_835_4275283607089299803-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/time_dim
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.18 sec   HDFS Read: 5113883 HDFS Write: 223194 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 180 msec
+OK
+Time taken: 20.157 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.018 seconds
+OK
+Time taken: 0.07 seconds
+OK
+Time taken: 0.071 seconds
+Query ID = odoo_20210909163825_a8cc6208-8d08-477c-a879-d0e3c798d650
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0127, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0127/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0127
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:38:31,768 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:38:35,916 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.83 sec
+MapReduce Total cumulative CPU time: 1 seconds 830 msec
+Ended Job = job_1631181757971_0127
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-38-25_254_6184598410115729657-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/warehouse
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.83 sec   HDFS Read: 7727 HDFS Write: 2133 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 830 msec
+OK
+Time taken: 18.146 seconds
+OK
+Time taken: 0.067 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.045 seconds
+OK
+Time taken: 0.095 seconds
+Query ID = odoo_20210909163843_b51b7a45-3499-4346-b4b2-500149c75622
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0128, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0128/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0128
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:38:49,468 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:38:54,597 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.97 sec
+MapReduce Total cumulative CPU time: 1 seconds 970 msec
+Ended Job = job_1631181757971_0128
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-38-43_630_3532763267477277241-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_site
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.97 sec   HDFS Read: 18100 HDFS Write: 7304 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 970 msec
+OK
+Time taken: 18.155 seconds
+OK
+Time taken: 0.068 seconds
+OK
+Time taken: 0.016 seconds
+OK
+Time taken: 0.035 seconds
+OK
+Time taken: 0.072 seconds
+Query ID = odoo_20210909163901_b7f814f7-bfda-4d15-b668-d853ad4819ac
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0129, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0129/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0129
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:39:06,435 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:39:11,552 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.98 sec
+MapReduce Total cumulative CPU time: 1 seconds 980 msec
+Ended Job = job_1631181757971_0129
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-39-01_991_3103697487493621270-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_page
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.98 sec   HDFS Read: 15090 HDFS Write: 5479 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 980 msec
+OK
+Time taken: 18.164 seconds
+OK
+Time taken: 0.066 seconds
+OK
+Time taken: 0.015 seconds
+OK
+Time taken: 0.038 seconds
+OK
+Time taken: 0.065 seconds
+Query ID = odoo_20210909163920_fd78f0de-6874-436e-826c-6e2094595403
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0130, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0130/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0130
+Hadoop job information for Stage-1: number of mappers: 2; number of reducers: 0
+2021-09-09 16:39:26,693 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:39:38,973 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 8.56 sec
+2021-09-09 16:39:42,030 Stage-1 map = 75%,  reduce = 0%, Cumulative CPU 21.06 sec
+2021-09-09 16:39:43,053 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 21.76 sec
+MapReduce Total cumulative CPU time: 21 seconds 760 msec
+Ended Job = job_1631181757971_0130
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-39-20_354_4103281035696881355-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/inventory
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 2   Cumulative CPU: 21.76 sec   HDFS Read: 424967010 HDFS Write: 35747959 SUCCESS
+Total MapReduce CPU Time Spent: 21 seconds 760 msec
+OK
+Time taken: 30.145 seconds
+OK
+Time taken: 0.062 seconds
+OK
+Time taken: 0.021 seconds
+OK
+Time taken: 0.043 seconds
+OK
+Time taken: 0.072 seconds
+Query ID = odoo_20210909163950_35be710b-e8a3-4353-a7e6-9b95b2e6fc43
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0131, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0131/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0131
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:39:58,629 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:40:06,787 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 6.98 sec
+MapReduce Total cumulative CPU time: 6 seconds 980 msec
+Ended Job = job_1631181757971_0131
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-39-50_735_6683699319298912774-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/store_sales
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 6.98 sec   HDFS Read: 92773766 HDFS Write: 23366478 SUCCESS
+Total MapReduce CPU Time Spent: 6 seconds 980 msec
+OK
+Time taken: 24.142 seconds
+OK
+Time taken: 0.071 seconds
+OK
+Time taken: 0.015 seconds
+OK
+Time taken: 0.067 seconds
+OK
+Time taken: 0.065 seconds
+Query ID = odoo_20210909164015_6ceaaaa8-6dc8-42f7-a5a0-cd22bb2a9415
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0132, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0132/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0132
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:40:20,769 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:40:24,905 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.92 sec
+MapReduce Total cumulative CPU time: 2 seconds 920 msec
+Ended Job = job_1631181757971_0132
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-40-15_103_3270954608072544713-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/store_returns
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 2.92 sec   HDFS Read: 4345921 HDFS Write: 1204071 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 920 msec
+OK
+Time taken: 18.184 seconds
+OK
+Time taken: 0.07 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.046 seconds
+OK
+Time taken: 0.066 seconds
+Query ID = odoo_20210909164033_97dafa57-980a-4812-a347-01bbc7067be1
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0133, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0133/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0133
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:40:40,549 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:40:49,765 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 8.66 sec
+MapReduce Total cumulative CPU time: 8 seconds 660 msec
+Ended Job = job_1631181757971_0133
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-40-33_492_8012653327533945876-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_sales
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 8.66 sec   HDFS Read: 133801809 HDFS Write: 33122262 SUCCESS
+Total MapReduce CPU Time Spent: 8 seconds 660 msec
+OK
+Time taken: 26.152 seconds
+OK
+Time taken: 0.071 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.045 seconds
+OK
+Time taken: 0.068 seconds
+Query ID = odoo_20210909164059_f9113270-0c97-47c4-ac9e-82f261c0aeca
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0134, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0134/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0134
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:41:05,934 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:41:12,078 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.12 sec
+MapReduce Total cumulative CPU time: 3 seconds 120 msec
+Ended Job = job_1631181757971_0134
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-40-59_856_2571236160256643640-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_returns
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.12 sec   HDFS Read: 5393058 HDFS Write: 1423359 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 120 msec
+OK
+Time taken: 20.179 seconds
+OK
+Time taken: 0.084 seconds
+OK
+Time taken: 0.02 seconds
+OK
+Time taken: 0.045 seconds
+OK
+Time taken: 0.096 seconds
+Query ID = odoo_20210909164120_200b9d49-b47c-40ea-9d0f-44ad6a7101ea
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0135, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0135/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0135
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:41:26,386 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:41:31,531 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 3.5 sec
+MapReduce Total cumulative CPU time: 3 seconds 500 msec
+Ended Job = job_1631181757971_0135
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-41-20_317_7575126525721501346-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/item_marketprices
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 3.5 sec   HDFS Read: 4207162 HDFS Write: 641615 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 500 msec
+OK
+Time taken: 20.162 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.019 seconds
+OK
+Time taken: 0.048 seconds
+OK
+Time taken: 0.111 seconds
+Query ID = odoo_20210909164140_21c0d21b-3cce-4de1-8768-d9bcaeb94f7c
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0136, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0136/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0136
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:41:47,333 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:41:59,609 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 10.74 sec
+MapReduce Total cumulative CPU time: 10 seconds 740 msec
+Ended Job = job_1631181757971_0136
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-41-40_738_904647681502270120-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/web_clickstreams
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 10.74 sec   HDFS Read: 178732160 HDFS Write: 35643814 SUCCESS
+Total MapReduce CPU Time Spent: 10 seconds 740 msec
+OK
+Time taken: 26.135 seconds
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.021 seconds
+OK
+Time taken: 0.071 seconds
+OK
+Time taken: 0.114 seconds
+Query ID = odoo_20210909164207_bf3ac734-f97d-4f5b-8dd1-763037a9ed45
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0137, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0137/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0137
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2021-09-09 16:42:14,352 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 16:42:21,522 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 5.98 sec
+MapReduce Total cumulative CPU time: 5 seconds 980 msec
+Ended Job = job_1631181757971_0137
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/.hive-staging_hive_2021-09-09_16-42-07_206_4028761880656688667-1/-ext-10002
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/product_reviews
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 5.98 sec   HDFS Read: 56361493 HDFS Write: 25517533 SUCCESS
+Total MapReduce CPU Time Spent: 5 seconds 980 msec
+OK
+Time taken: 22.171 seconds
+OK
+Time taken: 0.067 seconds
+======= Load data into hive time =========
+Start timestamp: 2021/09/09:16:34:15 1631185455
+Stop  timestamp: 2021/09/09:16:42:35 1631185955
+Duration:  0h 8m 20s
+----- result -----
+Load data SUCCESS exit code: 0
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/populateMetastore-run_query.log
+===========================

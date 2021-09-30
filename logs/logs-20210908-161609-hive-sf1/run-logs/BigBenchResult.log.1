@@ -1,0 +1,29 @@
+Sep 08, 2021 4:14:52 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      (this might take a while...)
+Sep 08, 2021 4:14:54 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      finished. Time:          0h:00m:01s:387ms
+Sep 08, 2021 4:14:54 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench engine validation: Data generation             (this might take a while...)
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench engine validation: Data generation             finished. Time:          0h:01m:14s:296ms
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench engine validation: Populate metastore          (this might take a while...)
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, populateMetastore, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 126
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench engine validation: Populate metastore          failed. Time:          0h:00m:00s:116ms
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench run
+INFO: ==============
+Benchmark run terminated
+Reason: An error occured while running a command in phase ENGINE_VALIDATION_LOAD_TEST
+==============
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: 
+************
+TPCx-BB
+Result
+v1.2
+************
+Sep 08, 2021 4:16:08 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: NOK: Some required BigBench phases were skipped. No final result available.

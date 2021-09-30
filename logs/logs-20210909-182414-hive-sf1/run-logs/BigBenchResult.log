@@ -1,0 +1,1076 @@
+Sep 09, 2021 3:32:43 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      (this might take a while...)
+Sep 09, 2021 3:32:50 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, cleanAll, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 3:32:50 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench clean all                                      failed. Time:          0h:00m:06s:241ms
+Sep 09, 2021 3:32:50 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench engine validation: Data generation             (this might take a while...)
+Sep 09, 2021 3:35:03 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench engine validation: Data generation             finished. Time:          0h:02m:13s:850ms
+Sep 09, 2021 3:35:03 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench engine validation: Populate metastore          (this might take a while...)
+Sep 09, 2021 3:43:21 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench engine validation: Populate metastore          finished. Time:          0h:08m:17s:704ms
+Sep 09, 2021 3:43:21 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench engine validation: Power test                  Running queries on          1 stream(s)
+Sep 09, 2021 3:43:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  1 ( 1/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q01_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:45:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  1 ( 1/30) finished. Time:          0h:01m:59s:960ms
+Sep 09, 2021 3:45:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  2 ( 2/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:46:34 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 2, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 3:46:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  2 ( 2/30) failed. Time:          0h:01m:12s:507ms
+Sep 09, 2021 3:46:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  3 ( 3/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q03_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:47:43 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 3, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 3:47:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  3 ( 3/30) failed. Time:          0h:01m:08s:983ms
+Sep 09, 2021 3:47:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  4 ( 4/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q04_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:48:04 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 4, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 3:48:04 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  4 ( 4/30) failed. Time:          0h:00m:21s:538ms
+Sep 09, 2021 3:48:04 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  5 ( 5/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q05_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:48:48 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 5, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 2
+Sep 09, 2021 3:48:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  5 ( 5/30) failed. Time:          0h:00m:43s:954ms
+Sep 09, 2021 3:48:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  6 ( 6/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q06_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:51:14 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  6 ( 6/30) finished. Time:          0h:02m:26s:348ms
+Sep 09, 2021 3:51:14 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  7 ( 7/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q07_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:54:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  7 ( 7/30) finished. Time:          0h:03m:09s:741ms
+Sep 09, 2021 3:54:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  8 ( 8/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q08_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:55:53 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 8, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 3:55:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  8 ( 8/30) failed. Time:          0h:01m:28s:982ms
+Sep 09, 2021 3:55:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  9 ( 9/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q09_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:56:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query  9 ( 9/30) finished. Time:          0h:00m:56s:086ms
+Sep 09, 2021 3:56:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 10 (10/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_engine_validation_power_test_0.log
+Sep 09, 2021 3:59:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 10 (10/30) finished. Time:          0h:02m:21s:185ms
+Sep 09, 2021 3:59:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 11 (11/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:01:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 11 (11/30) finished. Time:          0h:01m:51s:251ms
+Sep 09, 2021 4:01:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 12 (12/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q12_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:03:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 12 (12/30) finished. Time:          0h:02m:11s:797ms
+Sep 09, 2021 4:03:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 13 (13/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q13_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:05:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 13 (13/30) finished. Time:          0h:02m:23s:569ms
+Sep 09, 2021 4:05:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 14 (14/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q14_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:06:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 14 (14/30) finished. Time:          0h:00m:55s:557ms
+Sep 09, 2021 4:06:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 15 (15/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q15_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:07:50 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 15 (15/30) finished. Time:          0h:01m:17s:360ms
+Sep 09, 2021 4:07:50 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 16 (16/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q16_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:09:26 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 16 (16/30) finished. Time:          0h:01m:35s:622ms
+Sep 09, 2021 4:09:26 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 17 (17/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q17_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:09:46 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 17, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 4:09:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 17 (17/30) failed. Time:          0h:00m:20s:922ms
+Sep 09, 2021 4:09:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 18 (18/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q18_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:10:07 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 18, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 4:10:07 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 18 (18/30) failed. Time:          0h:00m:20s:791ms
+Sep 09, 2021 4:10:07 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 19 (19/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q19_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:12:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 19 (19/30) finished. Time:          0h:02m:26s:371ms
+Sep 09, 2021 4:12:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 20 (20/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q20_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:14:25 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 20, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 4:14:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 20 (20/30) failed. Time:          0h:01m:51s:619ms
+Sep 09, 2021 4:14:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 21 (21/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q21_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:18:06 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 21 (21/30) finished. Time:          0h:03m:40s:490ms
+Sep 09, 2021 4:18:06 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 22 (22/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q22_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:19:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 22 (22/30) finished. Time:          0h:01m:36s:877ms
+Sep 09, 2021 4:19:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 23 (23/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:20:03 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 23, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 4:20:03 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 23 (23/30) failed. Time:          0h:00m:20s:666ms
+Sep 09, 2021 4:20:03 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 24 (24/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q24_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:22:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 24 (24/30) finished. Time:          0h:02m:47s:848ms
+Sep 09, 2021 4:22:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 25 (25/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q25_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:25:43 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 25, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 4:25:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 25 (25/30) failed. Time:          0h:02m:52s:018ms
+Sep 09, 2021 4:25:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 26 (26/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q26_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:26:58 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 26, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 4:26:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 26 (26/30) failed. Time:          0h:01m:14s:909ms
+Sep 09, 2021 4:26:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 27 (27/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q27_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:27:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 27 (27/30) finished. Time:          0h:00m:55s:901ms
+Sep 09, 2021 4:27:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 28 (28/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:28:59 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 28, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 4:28:59 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 28 (28/30) failed. Time:          0h:01m:04s:615ms
+Sep 09, 2021 4:28:59 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 29 (29/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q29_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:30:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 29 (29/30) finished. Time:          0h:01m:55s:194ms
+Sep 09, 2021 4:30:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 30 (30/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q30_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:18 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 30, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 4:32:18 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Power test                  stream          0, query 30 (30/30) failed. Time:          0h:01m:23s:985ms
+Sep 09, 2021 4:32:18 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench engine validation: Power test                  finished. Time:          0h:48m:56s:717ms
+Sep 09, 2021 4:32:18 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench engine validation: Check all query results     Running queries on          1 stream(s)
+Sep 09, 2021 4:32:18 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  1 ( 1/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q01_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:19 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  1 ( 1/30) finished. Time:          0h:00m:01s:510ms
+Sep 09, 2021 4:32:19 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  2 ( 2/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:21 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 2, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  2 ( 2/30) failed. Time:          0h:00m:01s:381ms
+Sep 09, 2021 4:32:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  3 ( 3/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q03_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:22 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 3, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:22 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  3 ( 3/30) failed. Time:          0h:00m:01s:385ms
+Sep 09, 2021 4:32:22 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  4 ( 4/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q04_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:23 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 4, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:23 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  4 ( 4/30) failed. Time:          0h:00m:01s:382ms
+Sep 09, 2021 4:32:23 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  5 ( 5/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q05_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:25 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 5, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  5 ( 5/30) failed. Time:          0h:00m:01s:388ms
+Sep 09, 2021 4:32:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  6 ( 6/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q06_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:26 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 6, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:26 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  6 ( 6/30) failed. Time:          0h:00m:01s:587ms
+Sep 09, 2021 4:32:26 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  7 ( 7/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q07_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:28 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  7 ( 7/30) finished. Time:          0h:00m:01s:553ms
+Sep 09, 2021 4:32:28 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  8 ( 8/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q08_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:29 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 8, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:29 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  8 ( 8/30) failed. Time:          0h:00m:01s:381ms
+Sep 09, 2021 4:32:29 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  9 ( 9/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q09_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:31 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query  9 ( 9/30) finished. Time:          0h:00m:01s:564ms
+Sep 09, 2021 4:32:31 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 10 (10/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 10 (10/30) finished. Time:          0h:00m:01s:770ms
+Sep 09, 2021 4:32:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 11 (11/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 11 (11/30) finished. Time:          0h:00m:01s:494ms
+Sep 09, 2021 4:32:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 12 (12/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q12_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:36 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 12 (12/30) finished. Time:          0h:00m:01s:509ms
+Sep 09, 2021 4:32:36 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 13 (13/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q13_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:37 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 13, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 13 (13/30) failed. Time:          0h:00m:01s:500ms
+Sep 09, 2021 4:32:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 14 (14/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q14_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:39 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 14 (14/30) finished. Time:          0h:00m:01s:533ms
+Sep 09, 2021 4:32:39 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 15 (15/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q15_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:40 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 15, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:40 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 15 (15/30) failed. Time:          0h:00m:01s:494ms
+Sep 09, 2021 4:32:40 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 16 (16/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q16_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:42 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 16, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:42 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 16 (16/30) failed. Time:          0h:00m:01s:504ms
+Sep 09, 2021 4:32:42 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 17 (17/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q17_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:43 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 17, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 17 (17/30) failed. Time:          0h:00m:01s:388ms
+Sep 09, 2021 4:32:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 18 (18/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q18_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:45 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 18, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 18 (18/30) failed. Time:          0h:00m:01s:397ms
+Sep 09, 2021 4:32:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 19 (19/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q19_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 19 (19/30) finished. Time:          0h:00m:01s:517ms
+Sep 09, 2021 4:32:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 20 (20/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q20_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:47 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 20, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:47 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 20 (20/30) failed. Time:          0h:00m:01s:410ms
+Sep 09, 2021 4:32:47 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 21 (21/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q21_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 21 (21/30) finished. Time:          0h:00m:01s:525ms
+Sep 09, 2021 4:32:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 22 (22/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q22_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 22 (22/30) finished. Time:          0h:00m:01s:513ms
+Sep 09, 2021 4:32:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 23 (23/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:52 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 23, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 23 (23/30) failed. Time:          0h:00m:01s:390ms
+Sep 09, 2021 4:32:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 24 (24/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q24_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 24 (24/30) finished. Time:          0h:00m:01s:520ms
+Sep 09, 2021 4:32:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 25 (25/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q25_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:55 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 25, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 25 (25/30) failed. Time:          0h:00m:01s:370ms
+Sep 09, 2021 4:32:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 26 (26/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q26_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:56 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 26, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:56 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 26 (26/30) failed. Time:          0h:00m:01s:383ms
+Sep 09, 2021 4:32:56 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 27 (27/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q27_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 27 (27/30) finished. Time:          0h:00m:01s:504ms
+Sep 09, 2021 4:32:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 28 (28/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:32:59 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 28, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:32:59 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 28 (28/30) failed. Time:          0h:00m:01s:421ms
+Sep 09, 2021 4:32:59 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 29 (29/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q29_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:33:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 29 (29/30) finished. Time:          0h:00m:01s:513ms
+Sep 09, 2021 4:33:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 30 (30/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q30_hive_engine_validation_power_test_0.log
+Sep 09, 2021 4:33:02 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 30, -p, engine_validation_power_test, -t, 0, -f, 1, -e, hive, -d, bigbench, -m, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 4:33:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench engine validation: Check all query results     stream          0, query 30 (30/30) failed. Time:          0h:00m:01s:371ms
+Sep 09, 2021 4:33:02 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench engine validation: Check all query results     finished. Time:          0h:00m:44s:178ms
+Sep 09, 2021 4:33:02 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench clean: Data                                    (this might take a while...)
+Sep 09, 2021 4:33:05 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench clean: Data                                    finished. Time:          0h:00m:02s:829ms
+Sep 09, 2021 4:33:05 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench preparation: Data generation                   (this might take a while...)
+Sep 09, 2021 4:34:15 PM io.bigdatabenchmark.v1.driver.BigBench generateData
+INFO: BigBench preparation: Data generation                   finished. Time:          0h:01m:09s:804ms
+Sep 09, 2021 4:34:15 PM io.bigdatabenchmark.v1.driver.BigBench run
+INFO: BigBench benchmark: Start
+Sep 09, 2021 4:34:15 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench phase 1: Load test                             (this might take a while...)
+Sep 09, 2021 4:42:35 PM io.bigdatabenchmark.v1.driver.BigBench runModule
+INFO: BigBench phase 1: Load test                             finished. Time:          0h:08m:20s:322ms
+Sep 09, 2021 4:42:35 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench phase 2: Power test                            Running queries on          1 stream(s)
+Sep 09, 2021 4:42:35 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  1 ( 1/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q01_hive_power_test_0.log
+Sep 09, 2021 4:44:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  1 ( 1/30) finished. Time:          0h:01m:58s:242ms
+Sep 09, 2021 4:44:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  2 ( 2/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_power_test_0.log
+Sep 09, 2021 4:45:48 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 2, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 4:45:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  2 ( 2/30) failed. Time:          0h:01m:14s:954ms
+Sep 09, 2021 4:45:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  3 ( 3/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q03_hive_power_test_0.log
+Sep 09, 2021 4:47:01 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 3, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 4:47:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  3 ( 3/30) failed. Time:          0h:01m:12s:826ms
+Sep 09, 2021 4:47:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  4 ( 4/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q04_hive_power_test_0.log
+Sep 09, 2021 4:47:24 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 4, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 4:47:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  4 ( 4/30) failed. Time:          0h:00m:22s:708ms
+Sep 09, 2021 4:47:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  5 ( 5/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q05_hive_power_test_0.log
+Sep 09, 2021 4:48:09 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 5, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 2
+Sep 09, 2021 4:48:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  5 ( 5/30) failed. Time:          0h:00m:44s:896ms
+Sep 09, 2021 4:48:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  6 ( 6/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q06_hive_power_test_0.log
+Sep 09, 2021 4:50:39 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  6 ( 6/30) finished. Time:          0h:02m:30s:770ms
+Sep 09, 2021 4:50:39 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  7 ( 7/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q07_hive_power_test_0.log
+Sep 09, 2021 4:53:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  7 ( 7/30) finished. Time:          0h:03m:12s:197ms
+Sep 09, 2021 4:53:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  8 ( 8/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q08_hive_power_test_0.log
+Sep 09, 2021 4:55:25 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 8, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 4:55:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  8 ( 8/30) failed. Time:          0h:01m:33s:657ms
+Sep 09, 2021 4:55:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  9 ( 9/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q09_hive_power_test_0.log
+Sep 09, 2021 4:56:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query  9 ( 9/30) finished. Time:          0h:00m:56s:269ms
+Sep 09, 2021 4:56:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 10 (10/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_power_test_0.log
+Sep 09, 2021 4:58:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 10 (10/30) finished. Time:          0h:02m:31s:839ms
+Sep 09, 2021 4:58:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 11 (11/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_power_test_0.log
+Sep 09, 2021 5:00:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 11 (11/30) finished. Time:          0h:01m:58s:772ms
+Sep 09, 2021 5:00:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 12 (12/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q12_hive_power_test_0.log
+Sep 09, 2021 5:03:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 12 (12/30) finished. Time:          0h:02m:17s:424ms
+Sep 09, 2021 5:03:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 13 (13/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q13_hive_power_test_0.log
+Sep 09, 2021 5:05:35 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 13 (13/30) finished. Time:          0h:02m:25s:170ms
+Sep 09, 2021 5:05:35 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 14 (14/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q14_hive_power_test_0.log
+Sep 09, 2021 5:06:29 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 14 (14/30) finished. Time:          0h:00m:54s:025ms
+Sep 09, 2021 5:06:29 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 15 (15/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q15_hive_power_test_0.log
+Sep 09, 2021 5:07:47 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 15 (15/30) finished. Time:          0h:01m:18s:124ms
+Sep 09, 2021 5:07:47 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 16 (16/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q16_hive_power_test_0.log
+Sep 09, 2021 5:09:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 16 (16/30) finished. Time:          0h:01m:38s:498ms
+Sep 09, 2021 5:09:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 17 (17/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q17_hive_power_test_0.log
+Sep 09, 2021 5:09:47 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 17, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 5:09:47 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 17 (17/30) failed. Time:          0h:00m:21s:776ms
+Sep 09, 2021 5:09:47 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 18 (18/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q18_hive_power_test_0.log
+Sep 09, 2021 5:10:09 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 18, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 5:10:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 18 (18/30) failed. Time:          0h:00m:21s:470ms
+Sep 09, 2021 5:10:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 19 (19/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q19_hive_power_test_0.log
+Sep 09, 2021 5:12:38 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 19 (19/30) finished. Time:          0h:02m:28s:991ms
+Sep 09, 2021 5:12:38 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 20 (20/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q20_hive_power_test_0.log
+Sep 09, 2021 5:14:29 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 20, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:14:29 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 20 (20/30) failed. Time:          0h:01m:51s:122ms
+Sep 09, 2021 5:14:29 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 21 (21/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q21_hive_power_test_0.log
+Sep 09, 2021 5:18:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 21 (21/30) finished. Time:          0h:03m:32s:138ms
+Sep 09, 2021 5:18:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 22 (22/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q22_hive_power_test_0.log
+Sep 09, 2021 5:19:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 22 (22/30) finished. Time:          0h:01m:36s:576ms
+Sep 09, 2021 5:19:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 23 (23/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_power_test_0.log
+Sep 09, 2021 5:19:58 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 23, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 5:19:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 23 (23/30) failed. Time:          0h:00m:20s:545ms
+Sep 09, 2021 5:19:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 24 (24/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q24_hive_power_test_0.log
+Sep 09, 2021 5:22:44 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 24 (24/30) finished. Time:          0h:02m:45s:670ms
+Sep 09, 2021 5:22:44 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 25 (25/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q25_hive_power_test_0.log
+Sep 09, 2021 5:25:36 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 25, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:25:36 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 25 (25/30) failed. Time:          0h:02m:52s:150ms
+Sep 09, 2021 5:25:36 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 26 (26/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q26_hive_power_test_0.log
+Sep 09, 2021 5:26:53 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 26, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:26:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 26 (26/30) failed. Time:          0h:01m:16s:875ms
+Sep 09, 2021 5:26:53 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 27 (27/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q27_hive_power_test_0.log
+Sep 09, 2021 5:27:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 27 (27/30) finished. Time:          0h:00m:58s:503ms
+Sep 09, 2021 5:27:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 28 (28/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_power_test_0.log
+Sep 09, 2021 5:28:56 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 28, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:28:56 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 28 (28/30) failed. Time:          0h:01m:04s:538ms
+Sep 09, 2021 5:28:56 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 29 (29/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q29_hive_power_test_0.log
+Sep 09, 2021 5:30:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 29 (29/30) finished. Time:          0h:01m:55s:202ms
+Sep 09, 2021 5:30:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 30 (30/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q30_hive_power_test_0.log
+Sep 09, 2021 5:32:11 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 30, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 5:32:11 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 2: Power test                            stream          0, query 30 (30/30) failed. Time:          0h:01m:20s:181ms
+Sep 09, 2021 5:32:11 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench phase 2: Power test                            finished. Time:          0h:49m:36s:168ms
+Sep 09, 2021 5:32:11 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench phase 3: First throughput test run             Running queries on          1 stream(s)
+Sep 09, 2021 5:32:11 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 15 ( 1/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q15_hive_throughput_test_1_0.log
+Sep 09, 2021 5:33:27 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 15 ( 1/30) finished. Time:          0h:01m:15s:754ms
+Sep 09, 2021 5:33:27 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 21 ( 2/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q21_hive_throughput_test_1_0.log
+Sep 09, 2021 5:36:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 21 ( 2/30) finished. Time:          0h:03m:27s:695ms
+Sep 09, 2021 5:36:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 30 ( 3/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q30_hive_throughput_test_1_0.log
+Sep 09, 2021 5:38:17 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 30, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 5:38:17 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 30 ( 3/30) failed. Time:          0h:01m:22s:049ms
+Sep 09, 2021 5:38:17 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 28 ( 4/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_throughput_test_1_0.log
+Sep 09, 2021 5:39:24 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 28, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:39:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 28 ( 4/30) failed. Time:          0h:01m:07s:281ms
+Sep 09, 2021 5:39:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 22 ( 5/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q22_hive_throughput_test_1_0.log
+Sep 09, 2021 5:41:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 22 ( 5/30) finished. Time:          0h:01m:36s:760ms
+Sep 09, 2021 5:41:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 20 ( 6/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q20_hive_throughput_test_1_0.log
+Sep 09, 2021 5:42:50 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 20, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:42:50 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 20 ( 6/30) failed. Time:          0h:01m:49s:324ms
+Sep 09, 2021 5:42:50 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 29 ( 7/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q29_hive_throughput_test_1_0.log
+Sep 09, 2021 5:44:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 29 ( 7/30) finished. Time:          0h:01m:55s:176ms
+Sep 09, 2021 5:44:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 27 ( 8/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q27_hive_throughput_test_1_0.log
+Sep 09, 2021 5:45:41 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 27 ( 8/30) finished. Time:          0h:00m:55s:345ms
+Sep 09, 2021 5:45:41 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  5 ( 9/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q05_hive_throughput_test_1_0.log
+Sep 09, 2021 5:47:21 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 5, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 2
+Sep 09, 2021 5:47:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  5 ( 9/30) failed. Time:          0h:01m:40s:670ms
+Sep 09, 2021 5:47:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 25 (10/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q25_hive_throughput_test_1_0.log
+Sep 09, 2021 5:50:13 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 25, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 5:50:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 25 (10/30) failed. Time:          0h:02m:51s:749ms
+Sep 09, 2021 5:50:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 18 (11/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q18_hive_throughput_test_1_0.log
+Sep 09, 2021 5:50:34 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 18, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 5:50:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 18 (11/30) failed. Time:          0h:00m:20s:631ms
+Sep 09, 2021 5:50:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  1 (12/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q01_hive_throughput_test_1_0.log
+Sep 09, 2021 5:52:30 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  1 (12/30) finished. Time:          0h:01m:56s:452ms
+Sep 09, 2021 5:52:30 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  3 (13/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q03_hive_throughput_test_1_0.log
+Sep 09, 2021 5:53:40 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 3, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 5:53:40 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  3 (13/30) failed. Time:          0h:01m:09s:755ms
+Sep 09, 2021 5:53:40 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 13 (14/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q13_hive_throughput_test_1_0.log
+Sep 09, 2021 5:56:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 13 (14/30) finished. Time:          0h:02m:22s:632ms
+Sep 09, 2021 5:56:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 12 (15/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q12_hive_throughput_test_1_0.log
+Sep 09, 2021 5:58:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 12 (15/30) finished. Time:          0h:02m:07s:553ms
+Sep 09, 2021 5:58:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 23 (16/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_throughput_test_1_0.log
+Sep 09, 2021 5:58:30 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 23, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 5:58:30 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 23 (16/30) failed. Time:          0h:00m:20s:439ms
+Sep 09, 2021 5:58:30 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  4 (17/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q04_hive_throughput_test_1_0.log
+Sep 09, 2021 5:58:51 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 4, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 5:58:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  4 (17/30) failed. Time:          0h:00m:20s:986ms
+Sep 09, 2021 5:58:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  6 (18/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q06_hive_throughput_test_1_0.log
+Sep 09, 2021 6:01:17 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  6 (18/30) finished. Time:          0h:02m:25s:822ms
+Sep 09, 2021 6:01:17 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 11 (19/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_throughput_test_1_0.log
+Sep 09, 2021 6:03:20 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 11 (19/30) finished. Time:          0h:02m:03s:153ms
+Sep 09, 2021 6:03:20 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 10 (20/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_throughput_test_1_0.log
+Sep 09, 2021 6:06:04 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 10 (20/30) finished. Time:          0h:02m:43s:185ms
+Sep 09, 2021 6:06:04 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 19 (21/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q19_hive_throughput_test_1_0.log
+Sep 09, 2021 6:08:41 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 19 (21/30) finished. Time:          0h:02m:37s:342ms
+Sep 09, 2021 6:08:41 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  8 (22/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q08_hive_throughput_test_1_0.log
+Sep 09, 2021 6:10:13 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 8, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 6:10:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  8 (22/30) failed. Time:          0h:01m:31s:791ms
+Sep 09, 2021 6:10:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  9 (23/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q09_hive_throughput_test_1_0.log
+Sep 09, 2021 6:11:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  9 (23/30) finished. Time:          0h:00m:56s:661ms
+Sep 09, 2021 6:11:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 14 (24/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q14_hive_throughput_test_1_0.log
+Sep 09, 2021 6:12:08 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 14 (24/30) finished. Time:          0h:00m:58s:226ms
+Sep 09, 2021 6:12:08 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  2 (25/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_throughput_test_1_0.log
+Sep 09, 2021 6:13:23 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 2, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 32
+Sep 09, 2021 6:13:23 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  2 (25/30) failed. Time:          0h:01m:14s:929ms
+Sep 09, 2021 6:13:23 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 17 (26/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q17_hive_throughput_test_1_0.log
+Sep 09, 2021 6:13:44 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 17, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 64
+Sep 09, 2021 6:13:44 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 17 (26/30) failed. Time:          0h:00m:21s:834ms
+Sep 09, 2021 6:13:44 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 26 (27/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q26_hive_throughput_test_1_0.log
+Sep 09, 2021 6:15:00 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, runQuery, -q, 26, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 127
+Sep 09, 2021 6:15:00 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 26 (27/30) failed. Time:          0h:01m:15s:594ms
+Sep 09, 2021 6:15:00 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  7 (28/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q07_hive_throughput_test_1_0.log
+Sep 09, 2021 6:18:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query  7 (28/30) finished. Time:          0h:03m:08s:946ms
+Sep 09, 2021 6:18:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 24 (29/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q24_hive_throughput_test_1_0.log
+Sep 09, 2021 6:21:07 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 24 (29/30) finished. Time:          0h:02m:57s:760ms
+Sep 09, 2021 6:21:07 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 16 (30/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q16_hive_throughput_test_1_0.log
+Sep 09, 2021 6:22:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench phase 3: First throughput test run             stream          0, query 16 (30/30) finished. Time:          0h:01m:36s:548ms
+Sep 09, 2021 6:22:43 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench phase 3: First throughput test run             finished. Time:          0h:50m:32s:140ms
+Sep 09, 2021 6:22:43 PM io.bigdatabenchmark.v1.driver.BigBench run
+INFO: BigBench benchmark: Stop                                finished. Time:          1h:48m:28s:636ms
+Sep 09, 2021 6:22:43 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench validation: Power test results                 Running queries on          1 stream(s)
+Sep 09, 2021 6:22:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  1 ( 1/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q01_hive_power_test_0.log
+Sep 09, 2021 6:22:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  1 ( 1/30) finished. Time:          0h:00m:01s:678ms
+Sep 09, 2021 6:22:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  2 ( 2/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_power_test_0.log
+Sep 09, 2021 6:22:46 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 2, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:22:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  2 ( 2/30) failed. Time:          0h:00m:01s:398ms
+Sep 09, 2021 6:22:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  3 ( 3/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q03_hive_power_test_0.log
+Sep 09, 2021 6:22:48 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 3, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:22:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  3 ( 3/30) failed. Time:          0h:00m:01s:407ms
+Sep 09, 2021 6:22:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  4 ( 4/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q04_hive_power_test_0.log
+Sep 09, 2021 6:22:49 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 4, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:22:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  4 ( 4/30) failed. Time:          0h:00m:01s:407ms
+Sep 09, 2021 6:22:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  5 ( 5/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q05_hive_power_test_0.log
+Sep 09, 2021 6:22:51 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 5, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:22:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  5 ( 5/30) failed. Time:          0h:00m:01s:441ms
+Sep 09, 2021 6:22:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  6 ( 6/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q06_hive_power_test_0.log
+Sep 09, 2021 6:22:52 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 6, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:22:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  6 ( 6/30) failed. Time:          0h:00m:01s:540ms
+Sep 09, 2021 6:22:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  7 ( 7/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q07_hive_power_test_0.log
+Sep 09, 2021 6:22:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  7 ( 7/30) finished. Time:          0h:00m:01s:540ms
+Sep 09, 2021 6:22:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  8 ( 8/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q08_hive_power_test_0.log
+Sep 09, 2021 6:22:55 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 8, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:22:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  8 ( 8/30) failed. Time:          0h:00m:01s:400ms
+Sep 09, 2021 6:22:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  9 ( 9/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q09_hive_power_test_0.log
+Sep 09, 2021 6:22:57 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query  9 ( 9/30) finished. Time:          0h:00m:01s:546ms
+Sep 09, 2021 6:22:57 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 10 (10/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_power_test_0.log
+Sep 09, 2021 6:22:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 10 (10/30) finished. Time:          0h:00m:01s:797ms
+Sep 09, 2021 6:22:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 11 (11/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_power_test_0.log
+Sep 09, 2021 6:23:00 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 11 (11/30) finished. Time:          0h:00m:01s:553ms
+Sep 09, 2021 6:23:00 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 12 (12/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q12_hive_power_test_0.log
+Sep 09, 2021 6:23:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 12 (12/30) finished. Time:          0h:00m:01s:553ms
+Sep 09, 2021 6:23:02 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 13 (13/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q13_hive_power_test_0.log
+Sep 09, 2021 6:23:03 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 13, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:03 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 13 (13/30) failed. Time:          0h:00m:01s:606ms
+Sep 09, 2021 6:23:03 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 14 (14/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q14_hive_power_test_0.log
+Sep 09, 2021 6:23:05 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 14 (14/30) finished. Time:          0h:00m:01s:532ms
+Sep 09, 2021 6:23:05 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 15 (15/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q15_hive_power_test_0.log
+Sep 09, 2021 6:23:06 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 15, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:06 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 15 (15/30) failed. Time:          0h:00m:01s:577ms
+Sep 09, 2021 6:23:06 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 16 (16/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q16_hive_power_test_0.log
+Sep 09, 2021 6:23:08 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 16, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:08 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 16 (16/30) failed. Time:          0h:00m:01s:555ms
+Sep 09, 2021 6:23:08 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 17 (17/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q17_hive_power_test_0.log
+Sep 09, 2021 6:23:09 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 17, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 17 (17/30) failed. Time:          0h:00m:01s:381ms
+Sep 09, 2021 6:23:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 18 (18/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q18_hive_power_test_0.log
+Sep 09, 2021 6:23:11 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 18, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:11 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 18 (18/30) failed. Time:          0h:00m:01s:393ms
+Sep 09, 2021 6:23:11 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 19 (19/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q19_hive_power_test_0.log
+Sep 09, 2021 6:23:12 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 19 (19/30) finished. Time:          0h:00m:01s:537ms
+Sep 09, 2021 6:23:12 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 20 (20/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q20_hive_power_test_0.log
+Sep 09, 2021 6:23:14 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 20, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:14 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 20 (20/30) failed. Time:          0h:00m:01s:386ms
+Sep 09, 2021 6:23:14 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 21 (21/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q21_hive_power_test_0.log
+Sep 09, 2021 6:23:15 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 21 (21/30) finished. Time:          0h:00m:01s:558ms
+Sep 09, 2021 6:23:15 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 22 (22/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q22_hive_power_test_0.log
+Sep 09, 2021 6:23:17 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 22 (22/30) finished. Time:          0h:00m:01s:540ms
+Sep 09, 2021 6:23:17 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 23 (23/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_power_test_0.log
+Sep 09, 2021 6:23:18 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 23, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:18 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 23 (23/30) failed. Time:          0h:00m:01s:420ms
+Sep 09, 2021 6:23:18 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 24 (24/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q24_hive_power_test_0.log
+Sep 09, 2021 6:23:20 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 24 (24/30) finished. Time:          0h:00m:01s:571ms
+Sep 09, 2021 6:23:20 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 25 (25/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q25_hive_power_test_0.log
+Sep 09, 2021 6:23:21 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 25, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 25 (25/30) failed. Time:          0h:00m:01s:412ms
+Sep 09, 2021 6:23:21 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 26 (26/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q26_hive_power_test_0.log
+Sep 09, 2021 6:23:22 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 26, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:22 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 26 (26/30) failed. Time:          0h:00m:01s:395ms
+Sep 09, 2021 6:23:22 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 27 (27/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q27_hive_power_test_0.log
+Sep 09, 2021 6:23:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 27 (27/30) finished. Time:          0h:00m:01s:539ms
+Sep 09, 2021 6:23:24 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 28 (28/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_power_test_0.log
+Sep 09, 2021 6:23:25 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 28, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 28 (28/30) failed. Time:          0h:00m:01s:391ms
+Sep 09, 2021 6:23:25 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 29 (29/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q29_hive_power_test_0.log
+Sep 09, 2021 6:23:27 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 29 (29/30) finished. Time:          0h:00m:01s:520ms
+Sep 09, 2021 6:23:27 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 30 (30/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q30_hive_power_test_0.log
+Sep 09, 2021 6:23:28 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 30, -p, power_test, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:28 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: Power test results                 stream          0, query 30 (30/30) failed. Time:          0h:00m:01s:397ms
+Sep 09, 2021 6:23:28 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench validation: Power test results                 finished. Time:          0h:00m:45s:021ms
+Sep 09, 2021 6:23:28 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench validation: First throughput test results      Running queries on          1 stream(s)
+Sep 09, 2021 6:23:28 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  1 ( 1/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q01_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:30 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  1 ( 1/30) finished. Time:          0h:00m:01s:529ms
+Sep 09, 2021 6:23:30 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  2 ( 2/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:31 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 2, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:31 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  2 ( 2/30) failed. Time:          0h:00m:01s:378ms
+Sep 09, 2021 6:23:31 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  3 ( 3/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q03_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:33 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 3, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  3 ( 3/30) failed. Time:          0h:00m:01s:375ms
+Sep 09, 2021 6:23:33 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  4 ( 4/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q04_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:34 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 4, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  4 ( 4/30) failed. Time:          0h:00m:01s:427ms
+Sep 09, 2021 6:23:34 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  5 ( 5/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q05_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:35 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 5, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:35 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  5 ( 5/30) failed. Time:          0h:00m:01s:390ms
+Sep 09, 2021 6:23:35 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  6 ( 6/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q06_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:37 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 6, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  6 ( 6/30) failed. Time:          0h:00m:01s:517ms
+Sep 09, 2021 6:23:37 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  7 ( 7/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q07_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:38 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  7 ( 7/30) finished. Time:          0h:00m:01s:521ms
+Sep 09, 2021 6:23:38 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  8 ( 8/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q08_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:40 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 8, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:40 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  8 ( 8/30) failed. Time:          0h:00m:01s:402ms
+Sep 09, 2021 6:23:40 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  9 ( 9/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q09_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:41 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query  9 ( 9/30) finished. Time:          0h:00m:01s:518ms
+Sep 09, 2021 6:23:41 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 10 (10/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q10_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 10 (10/30) finished. Time:          0h:00m:01s:645ms
+Sep 09, 2021 6:23:43 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 11 (11/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 11 (11/30) finished. Time:          0h:00m:01s:510ms
+Sep 09, 2021 6:23:45 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 12 (12/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q12_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 12 (12/30) finished. Time:          0h:00m:01s:509ms
+Sep 09, 2021 6:23:46 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 13 (13/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q13_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:48 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 13, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 13 (13/30) failed. Time:          0h:00m:01s:517ms
+Sep 09, 2021 6:23:48 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 14 (14/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q14_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 14 (14/30) finished. Time:          0h:00m:01s:523ms
+Sep 09, 2021 6:23:49 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 15 (15/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q15_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:51 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 15, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 15 (15/30) failed. Time:          0h:00m:01s:552ms
+Sep 09, 2021 6:23:51 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 16 (16/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q16_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:52 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 16, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 16 (16/30) failed. Time:          0h:00m:01s:542ms
+Sep 09, 2021 6:23:52 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 17 (17/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q17_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:54 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 17, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 17 (17/30) failed. Time:          0h:00m:01s:403ms
+Sep 09, 2021 6:23:54 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 18 (18/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q18_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:55 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 18, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 18 (18/30) failed. Time:          0h:00m:01s:409ms
+Sep 09, 2021 6:23:55 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 19 (19/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q19_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:57 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 19 (19/30) finished. Time:          0h:00m:01s:529ms
+Sep 09, 2021 6:23:57 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 20 (20/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q20_hive_throughput_test_1_0.log
+Sep 09, 2021 6:23:58 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 20, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:23:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 20 (20/30) failed. Time:          0h:00m:01s:496ms
+Sep 09, 2021 6:23:58 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 21 (21/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q21_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:00 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 21 (21/30) finished. Time:          0h:00m:01s:578ms
+Sep 09, 2021 6:24:00 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 22 (22/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q22_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 22 (22/30) finished. Time:          0h:00m:01s:671ms
+Sep 09, 2021 6:24:01 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 23 (23/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:03 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 23, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:24:03 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 23 (23/30) failed. Time:          0h:00m:01s:445ms
+Sep 09, 2021 6:24:03 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 24 (24/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q24_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:04 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 24 (24/30) finished. Time:          0h:00m:01s:664ms
+Sep 09, 2021 6:24:04 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 25 (25/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q25_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:06 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 25, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:24:06 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 25 (25/30) failed. Time:          0h:00m:01s:401ms
+Sep 09, 2021 6:24:06 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 26 (26/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q26_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:07 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 26, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:24:07 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 26 (26/30) failed. Time:          0h:00m:01s:416ms
+Sep 09, 2021 6:24:07 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 27 (27/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q27_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 27 (27/30) finished. Time:          0h:00m:01s:515ms
+Sep 09, 2021 6:24:09 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 28 (28/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:10 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 28, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:24:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 28 (28/30) failed. Time:          0h:00m:01s:396ms
+Sep 09, 2021 6:24:10 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 29 (29/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q29_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:12 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 29 (29/30) finished. Time:          0h:00m:01s:512ms
+Sep 09, 2021 6:24:12 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 30 (30/30) log file: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q30_hive_throughput_test_1_0.log
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench runCmd
+INFO: Command: [bash, /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench, validateQuery, -q, 30, -p, throughput_test_1, -t, 0, -m, 1, -f, 1, -s, 1, -U]
+got non-zero return value: 1
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench$QueryThread call
+INFO: BigBench validation: First throughput test results      stream          0, query 30 (30/30) failed. Time:          0h:00m:01s:395ms
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench runQueries
+INFO: BigBench validation: First throughput test results      finished. Time:          0h:00m:44s:725ms
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: 
+************
+TPCx-BB
+Result
+v1.2
+************
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: T_LOAD = 500.322
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: T_LD = 0.1 * T_LOAD: 50.0322
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: T_PT = 2490.198103399175
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: T_T_PUT = 3032.14
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: T_TT = 3032.14
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: === Checking validity of the final result ===
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: OK: All required BigBench phases were performed.
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: OK: All 30 queries were running in the power test.
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: OK: All 30 queries were running in the first throughput test.
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: OK: Pretend mode was inactive. All commands were executed.
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: === Final result ===
+Sep 09, 2021 6:24:13 PM io.bigdatabenchmark.v1.driver.BigBench computeResult
+INFO: VALID BBQpm@1 = 0.6433458469415911

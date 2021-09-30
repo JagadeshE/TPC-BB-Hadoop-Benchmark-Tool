@@ -1,0 +1,133 @@
+Additional local hive settings found. Adding /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q23/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = b1f5751b-7096-4899-b306-5027fc1eb7d8
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = 4a62036d-2f10-47ec-9f18-a6a1727dd6bb
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+hive.exec.compress.output=false
+hive.optimize.sampling.orderby=true
+hive.optimize.sampling.orderby.number=20000
+hive.optimize.sampling.orderby.percent=0.1
+OK
+Time taken: 0.074 seconds
+NoViableAltException(377@[321:1: constant : ( ( intervalLiteral )=> intervalLiteral | Number | dateLiteral | timestampLiteral | timestampLocalTZLiteral | StringLiteral | stringLiteralSequence | IntegralLiteral | NumberLiteral | charSetStringLiteral | booleanValue | KW_NULL -> TOK_NULL );])
+	at org.antlr.runtime.DFA.noViableAlt(DFA.java:158)
+	at org.antlr.runtime.DFA.predict(DFA.java:116)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.constant(HiveParser_IdentifiersParser.java:5359)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.atomExpression(HiveParser_IdentifiersParser.java:6939)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceFieldExpression(HiveParser_IdentifiersParser.java:7172)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnaryPrefixExpression(HiveParser_IdentifiersParser.java:7671)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceUnarySuffixExpression(HiveParser_IdentifiersParser.java:7727)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseXorExpression(HiveParser_IdentifiersParser.java:7889)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceStarExpression(HiveParser_IdentifiersParser.java:8032)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedencePlusExpression(HiveParser_IdentifiersParser.java:8175)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceConcatenateExpression(HiveParser_IdentifiersParser.java:8314)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAmpersandExpression(HiveParser_IdentifiersParser.java:8524)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceBitwiseOrExpression(HiveParser_IdentifiersParser.java:8661)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceSimilarExpressionPart(HiveParser_IdentifiersParser.java:9307)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceSimilarExpressionMain(HiveParser_IdentifiersParser.java:9156)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceSimilarExpression(HiveParser_IdentifiersParser.java:9040)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceEqualExpression(HiveParser_IdentifiersParser.java:10254)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceNotExpression(HiveParser_IdentifiersParser.java:10541)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceAndExpression(HiveParser_IdentifiersParser.java:10650)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.precedenceOrExpression(HiveParser_IdentifiersParser.java:10791)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.expression(HiveParser_IdentifiersParser.java:6870)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.havingCondition(HiveParser_IdentifiersParser.java:2252)
+	at org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.havingClause(HiveParser_IdentifiersParser.java:2170)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.havingClause(HiveParser.java:45066)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.atomSelectStatement(HiveParser.java:39852)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatement(HiveParser.java:40044)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.selectStatementWithCTE(HiveParser.java:40732)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.createTableStatement(HiveParser.java:6848)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.ddlStatement(HiveParser.java:4295)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.execStatement(HiveParser.java:2494)
+	at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1420)
+	at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:220)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:74)
+	at org.apache.hadoop.hive.ql.parse.ParseUtils.parse(ParseUtils.java:67)
+	at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:616)
+	at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1826)
+	at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1773)
+	at org.apache.hadoop.hive.ql.Driver.compileAndRespond(Driver.java:1768)
+	at org.apache.hadoop.hive.ql.reexec.ReExecDriver.compileAndRespond(ReExecDriver.java:126)
+	at org.apache.hadoop.hive.ql.reexec.ReExecDriver.run(ReExecDriver.java:214)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:239)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:188)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:402)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:335)
+	at org.apache.hadoop.hive.cli.CliDriver.processReader(CliDriver.java:471)
+	at org.apache.hadoop.hive.cli.CliDriver.processFile(CliDriver.java:487)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:793)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:759)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:683)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+FAILED: ParseException line 34:0 cannot recognize input near '1.3' ';' 'DROP' in constant
+======= q23_hive_engine_validation_power_test_0 time =======
+Start timestamp: 2021/09/09:16:19:54 1631184594
+Stop  timestamp: 2021/09/09:16:20:02 1631184602
+Duration:  0h 0m 8s
+q23_hive_engine_validation_power_test_0 FAILED exit code: 64 
+----- result -----
+EMPTY  bytes: 0
+to display: hadoop fs -cat /user/odoo/benchmarks/bigbench/queryResults/q23_hive_engine_validation_power_test_0_result/*
+----- logs -----
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q23_hive_engine_validation_power_test_0.log
+=========================
+cat: `/user/odoo/benchmarks/bigbench/queryResults/q23_hive_engine_validation_power_test_0_result/*': No such file or directory
+Files /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q23/results/q23-result and /dev/fd/62 differ
+Validation of /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q23/results/q23-result failed: Query returned incorrect results
+Validation failed: Query results are not OK

@@ -1,0 +1,15 @@
+/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/conf/engineSettings.conf: line 36: /jagadesh/hive/apache-hive-3.1.2-bin: Is a directory
+An error occured while running command:
+==========
+runEngineCmd -f /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/population/hiveCreateLoad.sql
+==========
+Please check the log files for details
+======= Load data into hive time =========
+Start timestamp: 2021/09/08:17:45:16 1631103316
+Stop  timestamp: 2021/09/08:17:45:16 1631103316
+Duration:  0h 0m 0s
+----- result -----
+Load data FAILED exit code: 126
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/populateMetastore-run_query.log
+===========================

@@ -1,0 +1,165 @@
+Additional local hive settings found. Adding /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q11/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = da421a53-ff44-455f-b5cf-8efa2090996e
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = 48ef138e-ef1c-4bca-bede-ca25e3e47d7b
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+hive.exec.compress.output=false
+OK
+Time taken: 0.077 seconds
+OK
+Time taken: 0.484 seconds
+No Stats for bigbench@product_reviews, Columns: pr_review_rating, pr_item_sk
+No Stats for bigbench@web_sales, Columns: ws_item_sk, ws_sold_date_sk, ws_net_paid
+No Stats for bigbench@date_dim, Columns: d_date, d_date_sk
+Query ID = odoo_20210909165913_a209f327-5658-44fd-82c1-e37100d2e56a
+Total jobs = 6
+Launching Job 1 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Starting Job = job_1631181757971_0162, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0162/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0162
+
+2021-09-09 16:59:24	Dump the side-table for tag: 1 with group count: 32 into file: file:/tmp/odoo/da421a53-ff44-455f-b5cf-8efa2090996e/hive_2021-09-09_16-59-13_690_8400396526047937017-1/-local-10010/HashTable-Stage-2/MapJoin-mapfile21--.hashtable
+Hadoop job information for Stage-7: number of mappers: 1; number of reducers: 1
+2021-09-09 16:59:24,965 Stage-7 map = 0%,  reduce = 0%
+2021-09-09 16:59:24	Uploaded 1 File to: file:/tmp/odoo/da421a53-ff44-455f-b5cf-8efa2090996e/hive_2021-09-09_16-59-13_690_8400396526047937017-1/-local-10010/HashTable-Stage-2/MapJoin-mapfile21--.hashtable (903 bytes)
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 2 out of 6
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1631181757971_0163, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0163/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0163
+2021-09-09 16:59:30,132 Stage-7 map = 100%,  reduce = 0%, Cumulative CPU 3.22 sec
+2021-09-09 16:59:36,304 Stage-7 map = 100%,  reduce = 100%, Cumulative CPU 6.41 sec
+MapReduce Total cumulative CPU time: 6 seconds 410 msec
+Ended Job = job_1631181757971_0162
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2021-09-09 16:59:48,354 Stage-2 map = 0%,  reduce = 0%
+2021-09-09 16:59:53,546 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 3.77 sec
+2021-09-09 16:59:58,677 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 6.1 sec
+MapReduce Total cumulative CPU time: 6 seconds 100 msec
+Ended Job = job_1631181757971_0163
+Stage-12 is filtered out by condition resolver.
+Stage-13 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2021-09-09 17:00:08	Dump the side-table for tag: 0 with group count: 5736 into file: file:/tmp/odoo/da421a53-ff44-455f-b5cf-8efa2090996e/hive_2021-09-09_16-59-13_690_8400396526047937017-1/-local-10008/HashTable-Stage-9/MapJoin-mapfile10--.hashtable
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 4 out of 6
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1631181757971_0164, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0164/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0164
+Hadoop job information for Stage-9: number of mappers: 1; number of reducers: 0
+2021-09-09 17:00:17,139 Stage-9 map = 0%,  reduce = 0%
+2021-09-09 17:00:22,293 Stage-9 map = 100%,  reduce = 0%, Cumulative CPU 2.35 sec
+MapReduce Total cumulative CPU time: 2 seconds 350 msec
+Ended Job = job_1631181757971_0164
+Launching Job 5 out of 6
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1631181757971_0165, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0165/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0165
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 1
+2021-09-09 17:00:35,174 Stage-4 map = 0%,  reduce = 0%
+2021-09-09 17:00:39,346 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.31 sec
+2021-09-09 17:00:44,480 Stage-4 map = 100%,  reduce = 100%, Cumulative CPU 4.03 sec
+MapReduce Total cumulative CPU time: 4 seconds 30 msec
+Ended Job = job_1631181757971_0165
+Loading data to table bigbench.q11_hive_power_test_0_result
+MapReduce Jobs Launched: 
+Stage-Stage-7: Map: 1  Reduce: 1   Cumulative CPU: 6.41 sec   HDFS Read: 230504 HDFS Write: 485486 SUCCESS
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 6.1 sec   HDFS Read: 1266811 HDFS Write: 114723 SUCCESS
+Stage-Stage-9: Map: 1   Cumulative CPU: 2.35 sec   HDFS Read: 490320 HDFS Write: 161 SUCCESS
+Stage-Stage-4: Map: 1  Reduce: 1   Cumulative CPU: 4.03 sec   HDFS Read: 11737 HDFS Write: 273 SUCCESS
+Total MapReduce CPU Time Spent: 18 seconds 890 msec
+OK
+Time taken: 97.08 seconds
+======= q11_hive_power_test_0 time =======
+Start timestamp: 2021/09/09:16:59:04 1631186944
+Stop  timestamp: 2021/09/09:17:00:51 1631187051
+Duration:  0h 1m 47s
+q11_hive_power_test_0 SUCCESS exit code: 0 
+----- result -----
+HAS_RESULT  bytes: 10
+to display: hadoop fs -cat /user/odoo/benchmarks/bigbench/queryResults/q11_hive_power_test_0_result/*
+----- logs -----
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q11_hive_power_test_0.log
+=========================
+Validation of /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q11/results/q11-result passed: Query returned correct results
+Validation passed: Query results are OK

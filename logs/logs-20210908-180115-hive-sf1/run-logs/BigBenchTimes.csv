@@ -1,0 +1,4 @@
+ID;benchmarkPhase;streamNumber;queryNumber;epochStartTimestamp;epochEndTimestamp;humanReadableStartTime;humanReadableEndTime;durationInMilliseconds;durationInSeconds;humanReadableDuration;queryType;successful;
+1;CLEAN_ALL;;;1631104177165;1631104187150;2021-09-08 17:59:37.165;2021-09-08 17:59:47.150;9985;9.985;0h:00m:09s:985ms;;true;
+2;ENGINE_VALIDATION_DATA_GENERATION;;;1631104187155;1631104265331;2021-09-08 17:59:47.155;2021-09-08 18:01:05.331;78176;78.176;0h:01m:18s:176ms;;true;
+3;ENGINE_VALIDATION_LOAD_TEST;;;1631104265333;1631104274175;2021-09-08 18:01:05.333;2021-09-08 18:01:14.175;8842;8.842;0h:00m:08s:842ms;;false;

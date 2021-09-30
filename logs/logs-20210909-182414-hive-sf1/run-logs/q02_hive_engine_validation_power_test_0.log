@@ -1,0 +1,150 @@
+Additional local hive settings found. Adding /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q02/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = 7e65157c-31c1-45df-a8d9-03dd2a390ddf
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = 69964617-1e39-4119-8eb8-21083b3e25ed
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+Added [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/bigbenchqueriesmr.jar] to class path
+Added resources: [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/bigbenchqueriesmr.jar]
+OK
+Time taken: 0.019 seconds
+Added resources: [/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q02/q2-sessionize.py]
+OK
+Time taken: 0.302 seconds
+OK
+Time taken: 0.357 seconds
+hive.exec.compress.output=false
+OK
+Time taken: 0.151 seconds
+OK
+Time taken: 0.302 seconds
+Query ID = odoo_20210909154541_e614036f-49be-4ffa-9564-526fbdd0919f
+Total jobs = 5
+Launching Job 1 out of 5
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1631181757971_0030, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0030/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0030
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2021-09-09 15:45:47,941 Stage-1 map = 0%,  reduce = 0%
+2021-09-09 15:46:01,300 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 13.63 sec
+2021-09-09 15:46:30,018 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 13.63 sec
+MapReduce Total cumulative CPU time: 13 seconds 630 msec
+Ended Job = job_1631181757971_0030 with errors
+Error during job, obtaining debugging information...
+Examining task ID: task_1631181757971_0030_m_000000 (and more) from job job_1631181757971_0030
+
+Task with the most failures(4): 
+-----
+Task ID:
+  task_1631181757971_0030_r_000000
+
+URL:
+  http://localhost:8088/taskdetails.jsp?jobid=job_1631181757971_0030&tipid=task_1631181757971_0030_r_000000
+-----
+Diagnostic Messages for this Task:
+Error: java.lang.RuntimeException: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"reducesinkkey0":0,"reducesinkkey1":3307047477},"value":{"_col0":298}}
+	at org.apache.hadoop.hive.ql.exec.mr.ExecReducer.reduce(ExecReducer.java:255)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:445)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:393)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1845)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"reducesinkkey0":0,"reducesinkkey1":3307047477},"value":{"_col0":298}}
+	at org.apache.hadoop.hive.ql.exec.mr.ExecReducer.reduce(ExecReducer.java:243)
+	... 7 more
+Caused by: org.apache.hadoop.hive.ql.metadata.HiveException: [Error 20000]: Unable to initialize custom script.
+	at org.apache.hadoop.hive.ql.exec.ScriptOperator.process(ScriptOperator.java:422)
+	at org.apache.hadoop.hive.ql.exec.Operator.baseForward(Operator.java:995)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:941)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:928)
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.process(SelectOperator.java:95)
+	at org.apache.hadoop.hive.ql.exec.mr.ExecReducer.reduce(ExecReducer.java:234)
+	... 7 more
+Caused by: java.io.IOException: Cannot run program "python": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.hadoop.hive.ql.exec.ScriptOperator.process(ScriptOperator.java:380)
+	... 12 more
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 13 more
+
+
+FAILED: Execution Error, return code 20000 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask. Unable to initialize custom script.
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 13.63 sec   HDFS Read: 29969653 HDFS Write: 0 FAIL
+Total MapReduce CPU Time Spent: 13 seconds 630 msec
+======= q02_hive_engine_validation_power_test_0 time =======
+Start timestamp: 2021/09/09:15:45:32 1631182532
+Stop  timestamp: 2021/09/09:15:46:32 1631182592
+Duration:  0h 1m 0s
+q02_hive_engine_validation_power_test_0 FAILED exit code: 32 
+----- result -----
+EMPTY  bytes: 0
+to display: hadoop fs -cat /user/odoo/benchmarks/bigbench/queryResults/q02_hive_engine_validation_power_test_0_result/*
+----- logs -----
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q02_hive_engine_validation_power_test_0.log
+=========================
+cat: `/user/odoo/benchmarks/bigbench/queryResults/q02_hive_engine_validation_power_test_0_result/*': No such file or directory
+Files /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q02/results/q02-result and /dev/fd/62 differ
+Validation of /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q02/results/q02-result failed: Query returned incorrect results
+Validation failed: Query results are not OK

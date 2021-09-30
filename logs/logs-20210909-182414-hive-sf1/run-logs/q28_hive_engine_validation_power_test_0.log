@@ -1,0 +1,141 @@
+=========================
+q28 step 1/3: Executing hive queries
+tmp result1 (training data) in: /user/odoo/benchmarks/bigbench/temp/q28_hive_engine_validation_power_test_0_temp/q28_hive_engine_validation_power_test_0_temp_training
+tmp result2 (test data)     in: /user/odoo/benchmarks/bigbench/temp/q28_hive_engine_validation_power_test_0_temp/q28_hive_engine_validation_power_test_0_temp_testing
+=========================
+Additional local hive settings found. Adding /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q28/engineLocalSettings.sql to hive init.
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/log4j-slf4j-impl-2.10.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/jagadesh/hadoop/hadoop-3.3.0/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Hive Session ID = e9020d50-e8ad-4d10-b79e-d8935890604c
+
+Logging initialized using configuration in jar:file:/jagadesh/hive/apache-hive-3.1.2-bin/lib/hive-common-3.1.2.jar!/hive-log4j2.properties Async: true
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Hive Session ID = 7090300a-3bbd-49f2-a58f-e5dc517bfa2d
+hive.execution.engine=mr
+hive.cbo.enable=true
+hive.stats.fetch.partition.stats is undefined
+hive.script.operator.truncate.env=false
+hive.compute.query.using.stats=true
+hive.vectorized.execution.enabled=true
+hive.vectorized.execution.reduce.enabled=true
+hive.stats.autogather=true
+mapreduce.input.fileinputformat.split.minsize=1
+mapreduce.input.fileinputformat.split.maxsize=256000000
+hive.exec.reducers.bytes.per.reducer=256000000
+hive.exec.reducers.max=1009
+hive.exec.parallel=true
+hive.exec.parallel.thread.number=8
+hive.exec.compress.intermediate=false
+hive.exec.compress.output=false
+mapred.map.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+hive.default.fileformat=TEXTFILE
+hive.auto.convert.sortmerge.join=true
+hive.auto.convert.sortmerge.join.noconditionaltask is undefined
+hive.optimize.bucketmapjoin=false
+hive.optimize.bucketmapjoin.sortedmerge=false
+hive.auto.convert.join.noconditionaltask.size=10000000
+hive.auto.convert.join=true
+hive.optimize.mapjoin.mapreduce is undefined
+hive.mapred.local.mem=0
+hive.mapjoin.smalltable.filesize=25000000
+hive.mapjoin.localtask.max.memory.usage=0.9
+hive.optimize.skewjoin=false
+hive.optimize.skewjoin.compiletime=false
+hive.optimize.ppd=true
+hive.optimize.ppd.storage=true
+hive.ppd.recognizetransivity=true
+hive.optimize.index.filter=false
+hive.optimize.sampling.orderby=false
+hive.optimize.sampling.orderby.number=1000
+hive.optimize.sampling.orderby.percent=0.1
+bigbench.hive.optimize.sampling.orderby=true
+bigbench.hive.optimize.sampling.orderby.number=20000
+bigbench.hive.optimize.sampling.orderby.percent=0.1
+hive.groupby.skewindata=false
+hive.exec.submit.local.task.via.child=true
+hive.optimize.sampling.orderby=true
+hive.optimize.sampling.orderby.number=20000
+hive.optimize.sampling.orderby.percent=0.1
+OK
+Time taken: 0.073 seconds
+OK
+Time taken: 0.404 seconds
+OK
+Time taken: 0.019 seconds
+OK
+Time taken: 0.084 seconds
+WARNING: Order/Sort by without limit in sub query or view [p] is removed, as it's pointless and bad for performance.
+Query ID = odoo_20210909162813_df5a7562-4024-48a6-9be9-7eccf6f546ca
+Total jobs = 4
+Launching Job 1 out of 4
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1631181757971_0106, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0106/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0106
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2021-09-09 16:28:21,913 Stage-2 map = 0%,  reduce = 0%
+2021-09-09 16:28:27,095 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 4.11 sec
+2021-09-09 16:28:31,196 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 5.85 sec
+MapReduce Total cumulative CPU time: 5 seconds 850 msec
+Ended Job = job_1631181757971_0106
+Launching Job 2 out of 4
+Loading data to table bigbench.q28_hive_engine_validation_power_test_0_temp_testing
+Stage-5 is selected by condition resolver.
+Stage-4 is filtered out by condition resolver.
+Moving data to directory hdfs://127.0.0.1:9000/user/hive/warehouse/bigbench.db/q28_hive_engine_validation_power_test_0_temp_training/.hive-staging_hive_2021-09-09_16-28-13_782_1579450285758571319-1/-ext-10000
+Stage-6 is filtered out by condition resolver.
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1631181757971_0107, Tracking URL = http://odoo:8088/proxy/application_1631181757971_0107/
+Kill Command = /jagadesh/hadoop/hadoop-3.3.0/bin/mapred job  -kill job_1631181757971_0107
+Loading data to table bigbench.q28_hive_engine_validation_power_test_0_temp_training
+Hadoop job information for Stage-10: number of mappers: 1; number of reducers: 1
+2021-09-09 16:28:43,445 Stage-10 map = 0%,  reduce = 0%
+2021-09-09 16:28:47,546 Stage-10 map = 100%,  reduce = 0%, Cumulative CPU 1.19 sec
+2021-09-09 16:28:52,666 Stage-10 map = 100%,  reduce = 100%, Cumulative CPU 2.94 sec
+MapReduce Total cumulative CPU time: 2 seconds 940 msec
+Ended Job = job_1631181757971_0107
+MapReduce Jobs Launched: 
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 5.85 sec   HDFS Read: 24607522 HDFS Write: 52921206 SUCCESS
+Stage-Stage-10: Map: 1  Reduce: 1   Cumulative CPU: 2.94 sec   HDFS Read: 13148 HDFS Write: 2078 SUCCESS
+Total MapReduce CPU Time Spent: 8 seconds 790 msec
+OK
+Time taken: 43.518 seconds
+=========================
+q28 step 2/3: Train and Test Naive Bayes Classifier with spark - read from metastore table
+training and testing data: bigbench.q28_hive_engine_validation_power_test_0_temp_training
+test data    : /user/odoo/benchmarks/bigbench/temp/q28_hive_engine_validation_power_test_0_temp/q28_hive_engine_validation_power_test_0_temp_testing
+OUT: /user/odoo/benchmarks/bigbench/queryResults/q28_hive_engine_validation_power_test_0_result
+=========================
+spark-submit --deploy-mode cluster --master yarn --class io.bigdatabenchmark.v1.queries.q28.NaiveBayesClassifier /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/Resources/bigbench-ml-spark.jar --fromHiveMetastore true --inputTraining bigbench.q28_hive_engine_validation_power_test_0_temp_training --inputTesting bigbench.q28_hive_engine_validation_power_test_0_temp_testing --lambda 0 --output /user/odoo/benchmarks/bigbench/queryResults/q28_hive_engine_validation_power_test_0_result/ --saveClassificationResult true --saveMetaInfo true --verbose false
+/jagadesh/hadoop_benchmark_tools/TPCx-BB-master/bin/bigBench: line 85: spark-submit: command not found
+======= q28_hive_engine_validation_power_test_0 time =======
+Start timestamp: 2021/09/09:16:28:05 1631185085
+Stop  timestamp: 2021/09/09:16:28:57 1631185137
+Duration:  0h 0m 52s
+q28_hive_engine_validation_power_test_0 FAILED exit code: 127 
+----- result -----
+EMPTY  bytes: 0
+to display: hadoop fs -cat /user/odoo/benchmarks/bigbench/queryResults/q28_hive_engine_validation_power_test_0_result/*
+----- logs -----
+time&status: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/times.csv
+full log: /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/logs/q28_hive_engine_validation_power_test_0.log
+=========================
+cat: `/user/odoo/benchmarks/bigbench/queryResults/q28_hive_engine_validation_power_test_0_result/*': No such file or directory
+Files /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q28/results/q28-result and /dev/fd/62 differ
+Validation of /jagadesh/hadoop_benchmark_tools/TPCx-BB-master/engines/hive/queries/q28/results/q28-result failed: Query returned incorrect results
+Validation failed: Query results are not OK
